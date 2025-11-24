@@ -11,7 +11,7 @@ const MovieSearch = () => {
         if (!query) return;
 
         try {
-            const response = await axios.get(`http://www.omdbapi.com/?s=${query}&apikey=bdad0b32`);
+            const response = await axios.get(``);
             setMovies(response.data.Search || []);
         } catch (error) {
             console.error(error);
